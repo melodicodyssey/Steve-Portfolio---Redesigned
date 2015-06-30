@@ -1,223 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Stephen Bauer - Front-End Web Developer. Experienecd in Javascript, jQuery, Ruby On Rails, PHP, HTML, CSS, MySQL, and other frameworks.">
+  <title>Stephen Bauer - Web Developer</title>
   <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-
-  <style type="text/css">
-
-  html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 16px;
-  }
-  .page-wrapper {
-    width: 62.5em;
-    padding: 0;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #ffffff;
-  }
-  .name-banner {
-    width: 47.938em;
-    height: 12.500em;
-    margin-top: 1.250em;
-    float: right;
-    background: #ffffff url("images/name-banner2.jpg") no-repeat 0%;
-  }
-  .navbar {
-    width: 20.8%;
-    height: 76.250em;
-    padding-right: 1.375em;
-    border-right: 0.188em solid #aaa9a9;
-  }
-  .main {
-    width: 76.7%;
-    height: 62.500em;
-    float: right;
-  }
-  #my-pic {
-    width: 200px;
-    height: 200px;
-    margin-top: 1.250em;
-    border-radius: 50%;
-    border: 2px solid #436D23;
-  }
-  h2 {
-    font-size: 1.375em;
-    color: #436D23;
-  }
-  a {
-    text-decoration: none;
-    color: rgb(98, 255, 70);
-  }
-  li {
-    -webkit-transition: color .5s ease;
-    -moz-transition: color .5s ease;
-    -o-transition: color .5s ease;
-    transition: color .5s ease;
-  }
-  li:hover {
-    color: #aaa9a9;
-  }
-  ul {
-    list-style: none;
-    padding-left: 1.250em;
-  }
-  .professional {
-    margin: 0;
-    padding-top: 2.813em;
-  }
-  .container {
-    margin-left: 1em;
-  }
-  .info-image {
-    position: relative;
-    width: 50em;
-    height: 43.750em;
-    background: #ffffff url("images/forest.jpg") no-repeat center center;
-  }
-  .info-contact, .info-bio, .info-gnosis, .info-aquaintly, .info-helio, .info-share {
-    position: absolute;
-    width: 50em;
-    height: 43.750em;
-    display: none;
-  }
-  .screen {
-    position: absolute;
-    width: 50em;
-    height: 43.750em;
-    background-color: rgba(0,0,0,.4);
-
-  }
-  .info-share img {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-  }
-  .info-aquaintly img {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-  }
-  .info-gnosis img {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-  }
- 
-  .contact-buttons-container {
-    margin-left: 0.938em;
-  }
-  .contact_btn {
-    padding-right: 0.625em;
-  }
-  .github_btn {
-    width: 2em;
-    height: 2em;
-    float: left;
-    background: url("images/github_icon.png") no-repeat;
-  }
-  .github_btn:hover {
-    background: url("images/github_icon_green.png") no-repeat;
-  }
-  .mail_btn {
-    width: 2em;
-    height: 2em;
-    float: left;
-    background: url("images/email_icon.png") no-repeat;
-  }
-  .mail_btn:hover {
-    background: url("images/email_icon_green.png") no-repeat;
-  }
-  .linkedin_btn {
-    width: 2em;
-    height: 2em;
-    float: left;
-    background: url("images/linkedin_icon_black.png") no-repeat;
-  }
-  .linkedin_btn:hover {
-    background: url("images/linkedin_icon_green.png") no-repeat;
-  }
-  .twitter_btn {
-    width: 2em;
-    height: 2em;
-    float: left;
-    background: url("images/twitter_icon_black2.png") no-repeat;
-  }
-  .twitter_btn:hover {
-    background: url("images/twitter_icon_green.ico") no-repeat;
-  }
-  .pointer {
-    cursor: pointer;
-  }
-  p {
-    position: relative;
-    color: #ffffff;
-    margin-left: 20px;
-  }
-  p.name {
-    font-size: 2em;
-    margin-bottom: -12px;
-    padding-top: 10px;
-  }
-  p.github {
-    background: url("images/github_icon_black2.png") no-repeat;
-    padding: 0.625em 0 0 0;
-    margin-top: 3.125em
-  }
-  span.github-text {
-    padding-left: 2.5em;
-  }
-  p.email {
-    background: url("images/email_icon.png") no-repeat;
-    padding: 0.625em 0 0 0;
-  }
-  span.email-text {
-    padding-left: 2.5em;
-  }
-  p.linkedin {
-    background: url("images/linkedin_icon_black.png") no-repeat;
-    padding: 0.625em 0 0 0;
-  }
-  span.linkedin-text {
-    padding-left: 2.5em;
-  }
-  p.twitter {
-    background: url("images/twitter_icon_black2.png") no-repeat;
-    padding: 0.625em 0 0 0;
-  }
-  span.twitter-text {
-    padding-left: 2.5em;
-  }
-  p.blog {
-    background: url("images/wordpress_icon.png") no-repeat;
-    padding: 0.625em 0 0 0;
-  }
-  span.blog-text {
-    padding-left: 2.5em;
-  }
-  p.resume {
-    background: url("images/pdf_icon_black.png") no-repeat;
-    padding: 0.625em 0 0 0;
-  }
-  span.resume-text {
-    padding-left: 2.5em;
-  }
-  footer {
-    width: 100%;
-    margin: 0;
-    padding: .8em 0 1em 0;
-    padding-left: 18em;
-    font-size: 0.750em;
-    font-style: italic;
-    background-color: black;
-    color: rgb(162, 204, 112);
-  }
-  .divider {
-    font-style: normal;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="StevePortfolio.css"/>
 </head>
 <body>
   <div class="page-wrapper">
@@ -230,7 +20,7 @@
           <div class="screen"></div>
           <!-- <img src="images/share_the_sun.png"/> -->
           <p>Description</p>
-          <p>Complete Solar's customer-facing web application, <a href="https://my.completesolar.com/" target="_blank">Share The Sun</a>, allowing logged-in users to view system information, related documents, and monitor the kWh production of their solar system.</p> 
+          <p>Complete Solar's customer-facing web application, <a href="https://my.completesolar.com/" target="_blank">Share The Sun</a>, allows logged-in users to view system information, related documents, and monitor the kWh production of their solar system.</p> 
           <p>Technologies</p>
           <p>Made using PHP, JavaScript/jQuery, Bootstrap, Charts.js and Enphase's production data API.</p>
           <iframe width="99.5%" height="700px" src="https://my.completesolar.com/" style="-webkit-transform:scale(1);-moz-transform-scale(1);"></iframe>
@@ -242,13 +32,13 @@
           <div class="info-aquaintly">
           <div class="screen"></div>
           <p>Description</p>
-          <p>A CRM constructed by <a href="https://github.com/paninapress" target="_blank">Nina Pacifico</a> and myself as our final project for General Assembly's Web Development Immersive course.</p>
-          <p>Users can currently sync their LinkedIn contacts to Acquaintly's database, and once they are categorized by the user, can be managed.  A color scheme ranging from green to red lets the user know up-front how long it has been since that friend/acquaintance was last contacted.
+          <p>A CRM constructed by me and <a href="https://github.com/paninapress" target="_blank">Nina Pacifico</a> as our final project for General Assembly's Web Development Immersive course.</p>
+          <p>Users can currently sync their LinkedIn contacts to Acquaintly's database, and once they are categorized by the user, these contacts can be managed.  A color scheme ranging from green to red lets the user know up-front how long it has been since that friend or acquaintance was last contacted.
           </p>
-          <p>Future deliverables will include incorporating Facebook, Twitter and Gmail into the mix.
+          <p>Future deliverables will include incorporating Facebook, Twitter, and Gmail into the mix.
           </p>
           <p>Intentions</p>
-          <p>My partner and I discovered we share a common task with which we are uncommonly deficient: keeping up with our friends and contacts.  Joining in her inspiration to construct an application that would help us, and others, keep track of our communications to our different friends and hold us to maintain some measure of social health, we set about building Acquaintly, an application well on its5 way to embodying the initial vision and idea.
+          <p>My partner and I discovered we share a common task with which we are uncommonly deficient: keeping up with our friends and contacts.  Joining in her inspiration to construct an application that would help us and others keep track of our relationships and hold us to maintain some measure of social health, we set about building Acquaintly, an application well on its way to embodying the initial vision and idea.
           </p>
           <p>Technologies</p>
           <p>Made using AngularJS, Ruby/Ruby on Rails, LinkedIn API, Omniauth, and Devise.</p>
@@ -260,29 +50,29 @@
           <div class="screen"></div>
           <p>Description</p>
           <p>An RSS feed aggregator and note-recording application I made as my first project for GA's WDI course.</p>
-          <p>Using feedly.com's API, users can access many feeds collected into a list of categories.  Their available actions are viewing the articles at-a-glance, and logging a comment for any article.  A user history page is maintained, for easy viewing of the user's entire comment history.
+          <p>Using feedly.com's API, users can access many feeds collected into a list of categories.  Their available actions are viewing the articles at-a-glance and logging a comment for any article.  A user history page is maintained for easy viewing of the user's entire comment history.
           </p>
           <p>Intentions</p>
-          <p>For awhile now I thought it would be beneficial to have a portal from which to access a wealth of news/information sources to gain an at-a-glance overview of what is happening in the world every day, as opposed to maintaining a schedule of checking a collection of sites to browse their content for the day.
+          <p>For awhile now I thought it would be beneficial to have a portal from which to access a wealth of news and information sources to gain an at-a-glance overview of what is happening in the world every day, as opposed to maintaining a schedule of checking a collection of sites to browse their content for the day.
           </p>
-          <p>A second feature I've been desiring is to easily learn something new each day or just keep a centralized log of my thoughts/progress that is connected to the source, in order to have a record of my information consumption.  With Gnosis created, this is now possible!
+          <p>A second feature I've been desiring is to easily learn something new each day or just keep a centralized log of my thoughts and progress that is connected to the source in order to have a record of my information consumption.  With Gnosis created, this is now possible!
           </p>
           <p>Technologies</p>
-          <p>Made using Ruby on Rails, the Feedly API, and the Omniauth gem.  Currently coded entirely in Ruby</p>
+          <p>Made using Ruby on Rails, the Feedly API, and the Omniauth gem.  Currently coded entirely in Ruby.</p>
           
           <img src="http://i.imgur.com/CnR1CPe.png"/>
           
           </div>
           <div class="info-bio">
           <div class="screen"></div>
-            <p>I believe that software can legitimately help to foster an educated, intelligent and creative human spirit in today's culture, drives my quest to become as proficient and powerful a developer as I can attain to be.  Though I start at humble beginnings, and a bit later than I would have liked, I am nonetheless looking ahead with the brightest of hopes for both myself and the people with which I'll have the pleasure of working with.
+            <p>I believe that great applications can legitimately help to foster an educated, intelligent, and creative human spirit in today's culture. It drives my quest to become as proficient and powerful a developer as I can attain to be.  Though I start at humble beginnings, and a bit later than I would have liked, I am nonetheless looking ahead with the brightest of hopes for both myself and the people with which I'll have the pleasure of working with.
             </p>
-            <p>I also love to write code.  Those moments when a piece of beautiful code just works perfectly for the first time, ore when a piece of code is revisited and refactored in a much more efficient and elegant way, are some of my proudest as a developer.  Even more so, the feeling of successfully helping a teammate discover the solution to a vexing problem is almost without compare.  The process of collaboration to code something beautiful is what I strive for.  My only regret is not getting started much sooner in life!</p>
+            <p>I also love to write code.  Those moments when a piece of beautiful code just works perfectly for the first time, or when a piece of code is revisited and refactored in a much more efficient and elegant way, are some of my proudest moments as a front-end developer.  Even more so, the feeling of successfully helping a teammate discover the solution to a vexing problem is almost without compare.  The process of collaboration to code something beautiful is what I strive for.  My only regret is not getting started much sooner in life!</p>
             <p>
-            As an alum of General Assembly after completing their <a href="https://generalassemb.ly/education/web-development-immersive" target="_blank">Web Development Immersive</a> course, I have been trained in full-stack web development using Ruby on Rails, and have since acquired professional front-end experience using PHP.
+            As an alumnus of General Assembly, after completing their <a href="https://generalassemb.ly/education/web-development-immersive" target="_blank">Web Development Immersive</a> course, I have been trained in full-stack web development using Ruby on Rails and have since acquired professional front-end experience using PHP.
             </p>
             <p>
-            I'm open to expand my knowledge, skills and experience to benefit not only any personal development, but any team I am part of, and any collaborative projects.
+            I'm open to expand my knowledge, skills, and experience to benefit not only any personal development, but any team I am part of, and any collaborative projects.
             </p>
           </div>
           <div class="info-contact">
@@ -330,44 +120,10 @@
 
   </div>
   <footer>Design by Rochell Langam <span class="divider">|</span> <a href="http://www.linkedin.com/in/rochellm" target="_blank">Linkedin</a> <span class="divider">|</span> <a href="https://github.com/azureowl" target="_blank">GitHub</a> </footer>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-  
-  
-  
-  $(document).ready(function(){
-    $(".share-nav").on("click", function () {
-      showInfo($(this), ".info-share");
-    });
-    $(".aquaintly-nav").on("click", function () {
-      showInfo($(this), ".info-aquaintly");
-    });
-    $(".gnosis-nav").on("click", function () {
-      showInfo($(this), ".info-gnosis");
-    });
-    $(".bio-nav").on("click", function () {
-      showInfo($(this), ".info-bio");
-    });
-    $(".contact-nav").on("click", function () {
-      showInfo($(this), ".info-contact");
-    });
+<script type="text/javascript" src="StevePortfolio.js"></script>
 
-    var infoArray = [$(".info-bio"), $(".info-contact"), $(".info-gnosis"), $(".info-aquaintly"), $(".info-helio"), $(".info-share")];  
-
-    function hideArray () {
-      for (var i = 0; i < infoArray.length; i++) {
-        infoArray[i].hide();
-      }
-    }
-    function showInfo (thisElement,elementInfo) {
-      hideArray();
-      thisElement.closest(".page-wrapper").find(elementInfo).fadeToggle("slow");
-    }
-
-     
-    
-  });
-</script>
 </body>
 
 </html>
